@@ -46,6 +46,7 @@ public partial class App : Application
     public App()
     {
         InitializeComponent();
+        DataAccess.InitializeDatabase();
 
         Host = Microsoft.Extensions.Hosting.Host.
         CreateDefaultBuilder().
