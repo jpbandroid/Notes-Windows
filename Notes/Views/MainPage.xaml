@@ -13,7 +13,9 @@
             <ListView x:Name="NoteStorage" Grid.Column="0"/>
             <StackPanel x:Name="NotePanel" Grid.Column="1">
                 <TextBox x:Name="Title" FontSize="48" FontWeight="SemiBold" Background="Transparent" BorderBrush="Transparent"/>
-                <RichEditBox x:Name="Note"/>
-            </StackPanel>
+                <RichEditBox x:Name="editor"/>
+            <Button Content="add to database" Click="Save_Click"/>
+            <Button Content="get from database" Click="Load_Click"/>
+        </StackPanel>
     </Grid>
 </Page>
